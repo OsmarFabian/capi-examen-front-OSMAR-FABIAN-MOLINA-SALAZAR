@@ -1,0 +1,20 @@
+<p>users Component</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Fecha de nacimiento</th>
+      <th>Edad</th>
+      <th>Direccion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.fecha_nacimiento }}</td>
+      <td>{{ user.edad }} años</td>
+      <td>{{ user.domicilio }}</td>
+    </tr>
+  </tbody>
+</table>
